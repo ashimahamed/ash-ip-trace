@@ -1,0 +1,133 @@
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #ff0000;
+    box-shadow: 0 1px 0 0 #ee000c;
+}
+
+.active-cyan input[type=text] {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+.active-cyan .fa,
+.active-cyan-2 .fa {
+    color: #4dd0e1;
+}
+
+body {
+    background: url(images/ashbackgroud.jpg) no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: left;
+    text-align: -webkit-center;
+    background-image: url('https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg');
+}
+
+.posn {
+    margin-top: 20%;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-inline {
+    display: block!important;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    text-align: -webkit-center;
+}
+
+.terminal {
+    color: white;
+    background: #41295a;
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    background: linear-gradient(45deg, #57003f 0%, #f57453 100%);
+    width: 70vw;
+    height: 65vh;
+    position: relative;
+    left: 8px;
+    text-align: left;
+    margin-top: 60px;
+    padding: 1rem;
+    border-top: solid 24px #cacaca;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.terminal:before {
+    content: '';
+    position: absolute;
+    height: 0.8em;
+    width: 0.8em;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #FF5F56;
+    -webkit-box-shadow: 1.4em 0em #FFBD2E, 2.8em 0em #2AC940;
+    -moz-box-shadow: 1.4em 0em #FFBD2E, 2.8em 0em #2AC940;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    top: -18px;
+}
+
+#typed {
+    font-size: 19px;
+    color: #00ffff;
+    height: calc(100% - 30px);
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.contain {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.overlay {
+    width: 100%;
+    position: absolute;
+    height: -webkit-fill-available;
+    z-index: 2;
+    background: #00e6463b;
+    opacity: 0.5;
+}
+
+.reset-btn {
+    background: linear-gradient(#f37458 0%, #de4c12 100%);
+    background-clip: padding-box;
+}
+
+.reset-btn:hover {
+    -webkit-box-shadow: -1px 2px 15px -2px rgba(110, 224, 146, 1);
+    -moz-box-shadow: -1px 2px 15px -2px rgba(110, 224, 146, 1);
+    box-shadow: -1px 2px 15px -2px rgb(50, 4, 255);
+}
+
+.terminal__prompt--user {
+    color: #7eda28;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url(images/ashbackgroud.jpg) no-repeat fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: bottom;
+        text-align: -webkit-center;
+    }
+    .contain {
+        text-align: -webkit-center;
+        background: #0c29cc4d;
+        position: absolute;
+        top: 231px;
+        padding: 2rem;
+    }
+    .posn {
+        margin-top: 0;
+    }
+}
